@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family-primary: 'Roboto', sans-serif;
+
+  --bg-color: white;
+  --bg-color-cards: hsla(194, 97%, 31%, 1);
+
+
+  --color-base: 240;
+  --color-primary: hsl(var(--color-base), 6%, 21%);
+  --color-secondary: hsl(var(--color-base), 9%, 89%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-rows: 3fr;
+}
+
+main {
+  /* height: 90%; */
+  max-width: 82.1rem;
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+  margin: 0 auto;
+}
+
+
+.time {
+  display: flex;
+  margin-bottom: 1.7rem;
+}
+
+span {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  color: hsla((var(--color-base)), 6%, 21%, 1);
+}
+
+.timer button {
+  border: none;
+  background-color: var(--bg-color);
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.cards button {
+  background-color: var(--color-secondary);
+  width: 138px;
+  height: 152px;
+  border: none;
+  border-radius: 24px;
+}
+
+.cards .selected{
+  background-color: var(--bg-color-cards);
+  fill: white;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  /* position: absolute; */
+  /* right: 3rem;
+  bottom: 3rem; */
+  align-self: baseline;
+  justify-self: right;
+}
+
+footer button {
+  border: none;
+  background: none;
+  scale: 0.8;
+}
+
+footer button:hover {
+  scale: 0.88;
+}
